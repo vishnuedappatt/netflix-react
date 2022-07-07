@@ -1,0 +1,38 @@
+.row{
+    margin-left: 20px;
+    color: #fff;
+
+}
+
+.posters{
+display: flex;
+padding: 20px;
+overflow-x: scroll;
+overflow-y: hidden;
+
+}
+
+.posters::-webkit-scrollbar{
+    display: none;
+}
+
+.cards{
+    max-height: 250px;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+.cards:hover{
+    transform: scale(1.1);
+}
+
+
+.small-cards{
+     max-height: 150px;
+     margin-right: 10px;
+     cursor: pointer;
+}
+
+.small-cards:hover{
+    transform: scale(1.1);
+}
