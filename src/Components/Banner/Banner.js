@@ -5,13 +5,16 @@ import axios  from '../../axios'
 
 
 function Banner() {
+
     const [movie, setMovie] = useState()
+
     useEffect(()=>{
         axios.get(`trending/all/week?api_key=${API_KEY}&language=en-US`).then((response)=>{
             console.log(response.data.results[1]);
             setMovie(response.data.results[1])
         })
     },[])
+
   return (
     <div style={{backgroundImage:`url(${movie ? imageUrl+movie.backdrop_path : "" })`}} className='banner'>
         <div className='content'>
